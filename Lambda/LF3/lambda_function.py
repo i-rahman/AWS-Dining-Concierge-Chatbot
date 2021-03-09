@@ -53,7 +53,8 @@ def lambda_handler(event, context_message):
                 if len(number) == 10 or (len(number) == 11 and number[0] == "1"):
                     number = number[1:]
             formatted_number = "+1"+number  
-            location = details['location']    
+            location = details['location'] 
+            date = details['date']   
             time = details['time']
             elasticdata = elastic_search(cuisine)
 
@@ -73,7 +74,9 @@ def lambda_handler(event, context_message):
                 + str(cuisine).title()
                 + " restaurant suggestions for "
                 + str(people)
-                + " people at "
+                + " people on "
+                + str(date)
+                +" at "
                 + str(time)
                 + " near "
                 + str(location).title() 
