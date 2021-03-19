@@ -8,7 +8,7 @@ from requests_aws4auth import AWS4Auth
 from boto3.dynamodb.conditions import Attr
 
 ENDPOINT = "https://api.yelp.com/v3/businesses/search"
-API_KEY = "akbCpr2FI1NyXLL5p5pINyTGfRRFrOzkuk2Y2LGFoBc_RU9nxnEdFZzyzO6cM7xoeohsGpYqWnB9TVrGkn_tP61PCzJZ_54rlVXfqIbzrndtim9yojZYdJ8xH9w2YHYx"
+API_KEY = "INSERT API KEY HERE"
 
 def get_restaurants(cuisine):
     restaurant_list = []
