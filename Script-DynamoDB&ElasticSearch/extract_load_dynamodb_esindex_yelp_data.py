@@ -85,7 +85,7 @@ def create_elastic_search_index():
         service,
         session_token=credentials.token,
     )
-    host = "search-restaurants-yad4az4e32h73o7e5ijgzai3rm.us-east-1.es.amazonaws.com"
+    host = "Enter elastic search host link"
 
     es = Elasticsearch(
         hosts=[{"host": host, "port": 443}],
